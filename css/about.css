@@ -1,0 +1,173 @@
+.about-intro {
+    margin-bottom: 30px;
+}
+
+.about-intro .description {
+    font-size: 1.2rem;
+}
+.announcement {
+    background: #fbfcfc;
+    color: #380daf;
+    text-align:center;
+    font-weight: bold;
+    padding: 5px 5%;
+}
+
+.announcement a {
+    color: #eb2f0e;
+    text-decoration: underline;
+}
+
+main h2 {
+    margin-bottom: 15px;
+
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.about-card {
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.about-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.about-card a {
+    color: #e43408;
+}
+
+.about-card a:hover {
+    color:gold;
+}
+
+.about-note {
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.about-note h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.about-note p {
+    margin-bottom: 0;
+}
+.who-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.who-cards div {
+    padding: 5px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgb(3 38 119 / 12%);
+}
+
+.who-cards h3 { 
+    margin-top: 0; 
+    font-size: 1.2rem; 
+}
+.about-note.tip {
+    border: 3px dashed orange;
+    background: #fff;
+    color: #785500;
+    box-shadow: 0 2px 8px rgb(3 38 119 / 12%);
+}
+
+.about-note.tip h4 {
+    color: #db1b18;
+    font-size: calc(1em + 7px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    text-align: left;
+    box-shadow: 0 2px 8px rgb(3 38 119 / 12%);
+    border-radius: 6px;
+}
+
+.testimonial-card a {
+    color: #e43408;
+}
+.testimonial-card a :hover{
+    color: gold;
+}
+
+@media (max-width: 767px) {
+    .who-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+    }
+
+    .testimonial-card blockquote {
+        margin-inline: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+.about-countries-section {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.about-countries {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.about-countries li {
+    display: grid;
+    align-content: start;
+    justify-items: center;
+    gap: 12px;
+}
+
+.about-countries img {
+    display: block;
+    width: min(100%, 132px);
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgb(3 38 119 / 24%));
+}
+
+@media (min-width: 768px) {
+    .about-countries {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

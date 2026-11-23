@@ -1,0 +1,32 @@
+body,
+.agency-box {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 600px;
+}
+
+.agency-box {
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.agency-box button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #020449;
+
+}
+
+.agency-box p a {
+    color: #e23004;
+}
+
+.agency-box p a:hover {
+    color:gold;
+}
